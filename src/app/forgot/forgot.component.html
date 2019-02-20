@@ -1,0 +1,9 @@
+<div class="forgotForm">
+<form name="myForm" #user="ngForm" (submit)="onSubmit(user.value)">
+  <p>Enter the email address or mobile phone number associated with your Amazon account.</p>
+  Email or Mobile phone number<br><br>
+  <input name="email" #name="ngModel" [(ngModel)]="user.email" required pattern="[a-zA-Z]+[0-9]+[@]+[.]+" />
+  <br><br>
+  <button type="button" class="btn btn-warning">Continue</button>
+</form>
+</div>

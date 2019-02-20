@@ -1,0 +1,29 @@
+<h1 style= "text-align: center;">Swad Sadan</h1>
+<div class="loginForm">
+
+<form name="myForm" #user="ngForm" (submit)="onSubmit(user.value)">
+  <h2>Login</h2>
+  name:
+  <input name="name" #name="ngModel" [(ngModel)]="user.name" required pattern="[a-zA-Z]+" />
+  <small *ngIf="name.hasError('required') && name.dirty" class="text-danger">Name is required</small>
+  <small *ngIf="name.hasError('pattern') && name.dirty" class="text-danger">Only alphabets allowed</small>
+  <br><br> 
+  Email:
+  <input name="email"  #email="ngModel" [(ngModel)]="user.email" required pattern="[a-zA-Z]+[0-9]+[@]+[.]+" />
+  <small *ngIf="email.hasError('required') && email.dirty" class="text-danger">email is required</small>
+  <small *ngIf="email.hasError('pattern') && email.dirty" class="text-danger">Valid Email allowed</small>
+  <br><br>
+
+  <input type="submit" [disabled]="!user.valid" />
+  <p><a routerLink="/forgot">Forgot password?</a></p>
+  <button type="button" class="btn btn-warning"><a routerLink="/signup">Sign Up</a></button>
+
+</form>
+</div>
+<hr>
+<div> Form Value: {{ user.value | json }}</div>
+<div> Form Valid Status: {{ user.status | json }} </div>
+
+<div>Name Value: {{name.value}}</div>
+<div>Email Value: {{email.value}}</div>
+

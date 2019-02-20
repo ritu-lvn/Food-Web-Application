@@ -1,0 +1,11 @@
+<h1>Sign Up Form</h1>
+<form>
+    Name:    <input #Name />
+    Email:    <input #Email/>
+    <button (click) ="SignUp(number1.value,number2.value)" type="button">Sign Up</button>
+</form> 
+<hr>
+<h2 *ngIf="result">
+    hi {{result.name}} your accout is created and ur id is {{result.id}}
+	
+</h2>

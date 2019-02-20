@@ -1,0 +1,27 @@
+.itemnList,.itemsList,.itemcList,.itemiList,.itemhList,.itembList{
+    color: orangered;
+    font-family: Lucida Sans;
+    font-style: italic;
+}
+.itemnList{
+    margin-top: -141px;
+}
+.itemsList{
+    margin-left: 624px;
+    margin-top: -299px;
+}
+.itemcList{
+    margin-left: 317px;
+    margin-top: -145px;
+}
+.itemiList{
+    margin-left: 955px;
+    margin-top: -366px;
+}
+.itemhList{
+    margin-top: -218px;
+}
+.itembList{
+    margin-left: 658px;
+    margin-top: -267px;
+}

@@ -1,0 +1,16 @@
+
+.loginForm {    
+    text-align: center;
+    position: relative;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    box-shadow: 1px 1px 7px 2px #ffa500ab;
+    outline: none;
+    padding: 5px;
+    width: 290px;
+    margin-left:550px;
+}
+input.ng-invalid.ng-dirty {
+    border:2px solid red
+}
